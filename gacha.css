@@ -1,0 +1,203 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;}
+body {
+    justify-content: center;/*水平方向に中央揃え*//*垂直方向に中央揃え*/
+}
+
+header {
+    align-items: center;
+    display: flex;
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url(2024.09.23.チェック.jpg);
+    background-size: 120px;
+}
+
+
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  color: #211717
+}
+
+
+.menu ul {
+    list-style: none; /* リストの点を消す */
+    margin: 0;
+    padding: 0;
+    display: flex; /* 子要素を横並びにする */
+}
+
+.menu li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.gacha {
+    width: 95%;
+    height: 95%;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    background-repeat: repeat;
+    background-image: url(template_sakubun_youshi.jpg);
+  }
+
+
+
+.directory {
+    width: 95%;
+    max-height: 600px;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+}
+.imageDisplay {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay3 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay4 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay5 {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imageDisplay2 {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.Backimage {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+  .gacha-start {
+    width: 300px;
+    height: 70px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 30px; 
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background: rgb(108, 108, 108);
+    background: linear-gradient(326deg, rgb(79, 82, 37) 29%, rgb(216, 236, 128) 48%, rgb(87, 87, 43) 56%, rgb(105, 112, 31) 75%);
+
+  }
+.gacha-start:hover{
+  background: rgb(69,69,69);
+  background: linear-gradient(326deg, rgba(69,69,69,1) 29%, rgba(243,243,243,1) 48%, rgba(106,106,106,1) 56%, rgba(69,69,69,1) 75%);
+    content: "Button";
+    
+
+  }
+
+#imageDisplay {
+    position: relative;
+}
+
+  #imageDisplay-SSR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+  #imageDisplay-SR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  #imageDisplay-NR {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  
+.move {
+    animation: animationZoom 1.5s ease-in-out forwards;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+@keyframes animationZoom {
+    0% {
+        transform: scale(80%);
+    }
+    80% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+      }
+  }
+
+  .move2 {
+    animation: animationslide 1.5s ease-in-out forwards;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+@keyframes animationslide {
+    0% {
+        transform: translateX(180px);
+    }
+    100% {
+        transform: translateX(0);
+      }
+  }
+
+  #gacharesult {
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .randomresult {
+    opacity: 1;
+  }
+
+  .opacity {
+    opacity: 0;
+  }
+
+  

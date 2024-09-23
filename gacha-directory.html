@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガチャ界！</title>
+    <link rel="stylesheet" href="gacha.css">
+</head>
+<body>
+    <div class="menuimg">
+    <header>
+        <div class="menu">
+            <ul>
+        <li class="bold" style=" background: linear-gradient(transparent 40%, #fbfbfb 100%); ">→ガチャ画面</li>
+            </ul>
+        </div>
+    </header>
+    </div>
+    <div class="directory">
+        <p class="bold">画像を3つ選択してください<br>推奨:画像サイズは500px*以上</p><br>
+        <p class="bold">5%(SSR)</p>
+        <img id="imageDisplay" src="#" alt="選択した画像" class="imageDisplay">
+        <input type="file" id="imageUpload" accept="image/*">
+        <br>
+        <p class="bold">25%(SR)</p>
+        <img id="imageDisplay3" src="#" alt="選択した画像" class="imageDisplay3">
+        <input type="file" id="imageUpload3" accept="image/*">
+        <br>
+        <p class="bold">70%(NR)</p>
+        <img id="imageDisplay4" src="#" alt="選択した画像" class="imageDisplay4">
+        <input type="file" id="imageUpload4" accept="image/*">
+    </div>
+    <div class="gacha"id="gachaback" class="gachaback">
+        <p id="gacharesult">ガチャ結果</p>
+        <div id="imageDisplay2">
+        <img id="imageDisplay-SSR" src="#" alt="" class="imageDisplay2" >
+        <img id="imageDisplay-SR" src="#" alt="" class="imageDisplay2" >
+        <img id="imageDisplay-NR" src="#" alt="" class="imageDisplay2" >
+        </div>
+        <button id="gacha-start" class="gacha-start" onclick="buttonClick()">ガチャを引く!</button>
+        <script src="gacha.js">
+        </script>
+    </div>
+
+</body>
+</html>
